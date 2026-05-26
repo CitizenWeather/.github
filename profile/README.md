@@ -1,4 +1,4 @@
-## Hi there 👋
+## the Citizen Weather Foundation 👋
 
 <!--
 
