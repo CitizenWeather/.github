@@ -1,0 +1,32 @@
+title: "📢 Announcement"
+body:
+  - type: markdown
+    attributes:
+      value: |
+        # Community Announcement
+
+        Share important news or announcements with the CitizenWeather community.
+
+  - type: textarea
+    id: announcement
+    attributes:
+      label: Announcement
+      description: What would you like to announce?
+      placeholder: |
+        Share your announcement here. Include:
+        - What's new?
+        - Why is it important?
+        - Call to action (if applicable)
+    validations:
+      required: true
+
+  - type: textarea
+    id: details
+    attributes:
+      label: Additional Details
+      description: Any additional information or links
+      placeholder: Add links, resources, or more context
+
+  - type: markdown
+    attributes:
+      value: "---\nThank you for keeping the community informed! 📣"

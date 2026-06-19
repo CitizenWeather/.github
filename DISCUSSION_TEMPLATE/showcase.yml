@@ -1,0 +1,49 @@
+title: "🎉 Showcase"
+body:
+  - type: markdown
+    attributes:
+      value: |
+        # Show & Tell
+
+        Built something amazing with CitizenWeather? Share it with the community!
+
+  - type: textarea
+    id: project-description
+    attributes:
+      label: Project Description
+      description: What did you build?
+      placeholder: |
+        Describe your project:
+        - What does it do?
+        - What problem does it solve?
+        - How did you use CitizenWeather?
+    validations:
+      required: true
+
+  - type: input
+    id: project-url
+    attributes:
+      label: Project URL or Link
+      description: Where can people see your project?
+      placeholder: https://example.com
+
+  - type: textarea
+    id: highlights
+    attributes:
+      label: Key Highlights
+      description: What's special about your project?
+      placeholder: |
+        - Feature 1
+        - Feature 2
+        - Notable achievement
+
+  - type: textarea
+    id: lessons-learned
+    attributes:
+      label: Lessons Learned
+      description: What did you learn using CitizenWeather?
+      placeholder: Share your experience and insights
+
+  - type: markdown
+    attributes:
+      value: "---\nWe'd love to see what you've built! ✨"
