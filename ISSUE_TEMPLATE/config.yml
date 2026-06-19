@@ -1,0 +1,11 @@
+blank_issues_enabled: false
+contact_links:
+  - name: 📚 Documentation
+    url: https://docs.citizenweather.org
+    about: Check our documentation first
+  - name: 💬 GitHub Discussions
+    url: https://github.com/orgs/citizenweather/discussions
+    about: Have a question? Start a discussion
+  - name: 🔒 Report a Security Issue
+    url: https://github.com/citizenweather/.github/security/policy
+    about: Found a security vulnerability? Please report it privately

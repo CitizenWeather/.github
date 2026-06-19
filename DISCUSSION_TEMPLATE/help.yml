@@ -1,0 +1,41 @@
+title: "🆘 Help & Support"
+body:
+  - type: markdown
+    attributes:
+      value: |
+        # Need Help?
+
+        Ask the community for help. Please provide as much detail as possible.
+
+  - type: textarea
+    id: question
+    attributes:
+      label: Your Question
+      description: What do you need help with?
+      placeholder: Describe your question or problem
+    validations:
+      required: true
+
+  - type: textarea
+    id: what-youve-tried
+    attributes:
+      label: What Have You Already Tried?
+      description: What solutions have you already attempted?
+      placeholder: |
+        - Searched the docs
+        - Tried ...
+        - Checked ...
+
+  - type: textarea
+    id: additional-context
+    attributes:
+      label: Additional Context
+      description: Environment, error messages, code snippets, etc.
+      placeholder: |
+        - OS: ...
+        - Version: ...
+        - Error message: ...
+
+  - type: markdown
+    attributes:
+      value: "---\nThe community is here to help! 💪"

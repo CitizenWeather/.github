@@ -1,0 +1,28 @@
+title: "💬 General Discussion"
+body:
+  - type: markdown
+    attributes:
+      value: |
+        # General Discussion
+
+        Have a topic you'd like to discuss? Start a conversation here!
+
+  - type: textarea
+    id: topic
+    attributes:
+      label: Topic
+      description: What would you like to discuss?
+      placeholder: Describe your topic or question
+    validations:
+      required: true
+
+  - type: textarea
+    id: context
+    attributes:
+      label: Context
+      description: Any additional context or background information
+      placeholder: Add any relevant details, links, or references
+
+  - type: markdown
+    attributes:
+      value: "---\nWe look forward to hearing from you! 🚀"

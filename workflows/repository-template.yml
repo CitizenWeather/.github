@@ -1,0 +1,39 @@
+name: Repository Template Sync
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '0 0 1 * *'
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+
+    steps:
+      - name: Checkout .github repo
+        uses: actions/checkout@v4
+        with:
+          repository: citizenweather/.github
+          path: template
+
+      - name: Document template contents
+        run: |
+          cat > /tmp/template-info.md << 'EOF'
+          # Organization Template Files
+
+          This repository provides shared organization templates.
+
+          ## Available Templates
+
+          - **Issue Templates**: `.github/ISSUE_TEMPLATE/`
+          - **Pull Request Template**: `.github/pull_request_template.md`
+          - **Workflows**: `.github/workflows/`
+          - **Discussion Templates**: `.github/DISCUSSION_TEMPLATE/`
+
+          ## How to Use
+
+          Copy relevant files from `.github/` to your repository to use these templates.
+          EOF
+          cat /tmp/template-info.md
